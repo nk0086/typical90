@@ -6,6 +6,13 @@ use proconio::{
 
 #[fastout]
 fn main() {
+    input! {
+        a: i64, b: i64, c: i64,
+    };
 
+    if a < c.pow(b as u32) {
+        println!("Yes");
+    } else {
+        println!("No");
+    }
 }
-
